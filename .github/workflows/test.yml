@@ -1,0 +1,34 @@
+name: Sign and Verify Image with Cosign
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sign-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Cosign
+        uses: chainguard-actions/cosign-installer@0ac3a167a7c7cba3bc0c2a13d1f2abcf18adecda
+
+      - name: Verify Cosign installation
+        run: cosign version
+
+  crane:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Install Crane
+        uses: chainguard-actions/setup-crane@da590462950ad7f31ba01fc43ad1144bc532f265
+
+      - name: Verify Crane installation
+        run: crane version
