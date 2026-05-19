@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  sign-image:
+  cosign:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,7 +27,7 @@ jobs:
     steps:
     # Upstream: https://github.com/imjasonh/setup-crane
       - name: Install Crane
-        uses: iamjasonh/setup-crane@6da1ae018866400525525ce74ff892880c099987
+        uses: imjasonh/setup-crane@6da1ae018866400525525ce74ff892880c099987
 
       - name: Verify Crane installation
         run: crane version

@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  sign-image:
+  cosign:
     runs-on: ubuntu-latest
     permissions:
       contents: read
