@@ -55,7 +55,7 @@ In this pipeline we are installing some tooling to interact with a remote regist
 - We publish to our own GitHub repository, eliminating risk of modifying releases as a public maintainer
 
 ### Show the change
-- Navigate to your demo project and view `test-chainguard.yml`
+- Navigate to your demo project and view `test-chainguard-tag.yml`
 - Show the only change is the reference to `chainguard-actions` and the updated SHA to point to the SHA for our action.
 - Navigate to `depandabot.yml` and note that there is no change needed to this file to keep chainguard-actions up to date.
 - Visit the [pull request](https://github.com/chainguard-demo/actions-demo/pull/1) bumping the version of the action to a newer SHA, showcasing no change to the depednabot workflow.
