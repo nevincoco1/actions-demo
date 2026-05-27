@@ -14,7 +14,7 @@ jobs:
     steps:
     # Upstream: https://github.com/sigstore/cosign-installer
       - name: Install Cosign
-        uses: chainguard-actions/sigstore--cosign-installer@3d4272fbfb966daf6ef8207d58530a6aa228bd45
+        uses: chainguard-actions/sigstore-cosign-installer@3d4272fbfb966daf6ef8207d58530a6aa228bd45
 
       - name: Verify Cosign installation
         run: cosign version
@@ -27,7 +27,7 @@ jobs:
     steps:
     # Upstream: https://github.com/imjasonh/setup-crane
       - name: Install Crane
-        uses: chainguard-actions/imjasonh--setup-crane@da590462950ad7f31ba01fc43ad1144bc532f265
+        uses: chainguard-actions/imjasonh-setup-crane@da590462950ad7f31ba01fc43ad1144bc532f265
 
       - name: Verify Crane installation
         run: crane version
