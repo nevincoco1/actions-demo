@@ -1,0 +1,4 @@
+enabled: true
+migrate:
+enabled: true
+period: "1h" # weekly; 1-day min
